@@ -1,0 +1,15 @@
+nasa_key_api : NGoxvP62hWuv8UI08NENqJkKUsavV1kYlfDeocQW
+
+
+nasa-api/mp-rest/url : https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera&page
+nasa-api/mp-rest/scope : javax.inject.Singleton
+
+
+quarkus:
+  http:
+    cors:
+      ~: true
+      methods: GET, PUT, POST, DELETE, OPTIONS
+      headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+      origins: /.*/
+
