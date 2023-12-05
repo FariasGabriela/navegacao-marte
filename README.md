@@ -7,10 +7,15 @@ Projeto dividido em Backend e Frontend
 ```bash
 # Clonar o repositório
 - git clone <HTTPS ou SSH do projeto>
+- cd navegacao-marte
 ```
 
+Para uso do projeto é necessário ter instalado na maquina:
+- [Maven](https://maven.apache.org/install.html)
+- [Node](https://nodejs.org/en)
+
 # robos-navegacao-backend
-Neste projeto foi realizado uma integração com a API : NASA APIs, a qual contém imagens de satélite de marte;
+Neste projeto foi realizado uma integração com a API : [NASA APIs](https://api.nasa.gov/), a qual contém imagens de satélite de marte;
 O projeto foi feito com backend em Java e com a framework Quarkus, para fins de automatizar o processo de desenvolvimento;
 
 ## Para rodar o projeto backend:
@@ -29,10 +34,12 @@ O frontend é integrado com um backend, buscando as imagens da API;
 
 ## Para rodar o projeto frontend:
 
+Em um novo terminal, o anterior deve ficar aberto com o backend rodando
+
 ```bash
 # Rodar o projeto frontend
 - cd robos-navegacao-frontend
-- npm i  / npm install
+- npm i ou npm install
 - npm start
 ```
 
