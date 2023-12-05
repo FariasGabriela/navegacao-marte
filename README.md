@@ -39,7 +39,7 @@ Em um novo terminal, o anterior deve ficar aberto com o backend rodando
 ```bash
 # Rodar o projeto frontend
 - cd robos-navegacao-frontend
-- npm i  / npm install
+- npm i ou npm install
 - npm start
 ```
 
