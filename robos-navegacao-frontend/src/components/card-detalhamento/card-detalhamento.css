@@ -1,0 +1,22 @@
+.card-coordenadas {
+    background-color: #FFFFFF;
+    height: 75px;
+    width: 220px;
+    display: flex;
+    position: relative;
+    float: right;
+    box-shadow: 3px 4px 3px 14px #ffffff;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bold {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .label-instrucao {
+    display: flex;
+  }
+  
