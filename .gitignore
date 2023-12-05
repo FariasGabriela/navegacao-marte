@@ -1,1 +1,3 @@
 /robos-navegacao-backend/target
+/robos-navegacao-frontend/node_modules
+/robos-navegacao-frontend/package-lock.json
