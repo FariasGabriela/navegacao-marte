@@ -7,6 +7,7 @@ Projeto dividido em Backend e Frontend
 ```bash
 # Clonar o repositório
 - git clone <HTTPS ou SSH do projeto>
+- cd navegacao-marte
 ```
 
 Para uso do projeto é necessário ter instalado na maquina:
@@ -32,6 +33,8 @@ Podem se realizar comandos pelo teclado, que estão descritos na legenda da tela
 O frontend é integrado com um backend, buscando as imagens da API;
 
 ## Para rodar o projeto frontend:
+
+Em um novo terminal, o anterior deve ficar aberto com o backend rodando
 
 ```bash
 # Rodar o projeto frontend
