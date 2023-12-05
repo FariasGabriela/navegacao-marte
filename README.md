@@ -10,8 +10,8 @@ Projeto dividido em Backend e Frontend
 ```
 
 Para uso do projeto é necessário ter instalado na maquina:
-[Maven](https://maven.apache.org/install.html)
-[Node](https://nodejs.org/en)
+- [Maven](https://maven.apache.org/install.html)
+- [Node](https://nodejs.org/en)
 
 # robos-navegacao-backend
 Neste projeto foi realizado uma integração com a API : NASA APIs, a qual contém imagens de satélite de marte;
