@@ -9,6 +9,10 @@ Projeto dividido em Backend e Frontend
 - git clone <HTTPS ou SSH do projeto>
 ```
 
+Para uso do projeto é necessário ter instalado na maquina:
+[Maven](https://maven.apache.org/install.html)
+[Node](https://nodejs.org/en)
+
 # robos-navegacao-backend
 Neste projeto foi realizado uma integração com a API : NASA APIs, a qual contém imagens de satélite de marte;
 O projeto foi feito com backend em Java e com a framework Quarkus, para fins de automatizar o processo de desenvolvimento;
