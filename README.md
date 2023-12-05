@@ -31,6 +31,7 @@ O projeto foi feito com backend em Java e com a framework Quarkus, para fins de 
 Este projeto é onde podemos ver a aplicação funcionando, ao rodar o projeto é apresentado uma tela com uma imagem de fundo e um robô em marte;
 Podem se realizar comandos pelo teclado, que estão descritos na legenda da tela, em que o robô irá se mover e buscar imagens de marte;
 O frontend é integrado com um backend, buscando as imagens da API;
+A lógica implementada foi de que a cada 5 passos o robô consulta o backend e trás uma imagem para o usuário;
 
 ## Para rodar o projeto frontend:
 
