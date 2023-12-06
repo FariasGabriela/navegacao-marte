@@ -55,6 +55,7 @@ function Navegacao() {
       title: "Uma imagem foi encontrada, gostaria de visualizar?",
       showCancelButton: true,
       cancelButtonText: `Não`,
+      confirmButtonText: `Sim`
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({ showConfirmButton: false, title: "Carregando..." });
