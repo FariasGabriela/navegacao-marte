@@ -1,26 +1,38 @@
 import { useState } from "react";
-import "./navigation.css";
+import "./navegacao.css";
 import RoboIcon from "./../images/icon/robo.svg";
 import Swal from "sweetalert2";
-import NavegacaoAPI from "./../resources/navegacao-api";
-import CardDetalhamento from "./../components/card-detalhamento/card-detalhamento";
+import NavegacaoAPI from "../resources/navegacao-api";
+import CardDetalhamento from "../components/card-detalhamento/card-detalhamento";
 
-function App() {
+/**
+ * Tela principal da aplicação
+ */
+function Navegacao() {
   const [roboLeft, setRoboLeft] = useState(0);
   const [roboRight, setRoboRight] = useState(0);
   const [roboScale, setRoboScale] = useState(1);
   const navegacaoAPI = new NavegacaoAPI();
 
+  /**
+   * Comando para mover o robo para direita
+   */
   function moveRoboRight() {
     setRoboRight(roboRight - 1);
     setRoboLeft(roboLeft + 1);
   }
 
+  /**
+   * Comando para mover robo para esquerda
+   */
   function moveRoboLeft() {
     setRoboRight(roboRight + 1);
     setRoboLeft(roboLeft - 1);
   }
 
+  /**
+   * Valida a quantia de passos para mostrar mensagem de imagem encontrada
+   */
   function validaPassosRobo() {
     if (roboLeft % 5 === 0 || roboRight % 5 === 0) return true;
 
@@ -35,6 +47,9 @@ function App() {
     }
   }
 
+  /**
+   * Mostra mensagem que uma imagem foi encontrada
+   */
   function dialogImageFound() {
     Swal.fire({
       title: "Uma imagem foi encontrada, gostaria de visualizar?",
@@ -48,6 +63,9 @@ function App() {
     });
   }
 
+  /**
+   * Busca imagem
+   */
   function findImage(position: number) {
     navegacaoAPI
       .getImageByPosition(position)
@@ -61,6 +79,9 @@ function App() {
       .catch(() => Swal.close());
   }
 
+  /**
+   * Verifica que teclas foram clicadas pelo usuário
+   */
   document.onkeydown = function (evt) {
     if (
       evt.key.toUpperCase() === "L" ||
@@ -99,4 +120,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navegacao;
